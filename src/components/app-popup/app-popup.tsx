@@ -9,7 +9,7 @@ export interface IAppPopup {
   arrowTop: number;
   currentCell: string;
   name: string;
-  date: string;
+  date?: string;
 }
 
 const AppPopup: FC<{properties: IAppPopup | null}> = ({properties}) => {
@@ -32,7 +32,7 @@ const AppPopup: FC<{properties: IAppPopup | null}> = ({properties}) => {
       <div className={styles.arrow} style={{ top: arrowTop }}/>
       Значение ячейки: <strong>{currentCell}</strong><br />
       ФИО ученика: <strong>{name}</strong><br />
-      Дата: <strong>{date}</strong>
+      {date && <>Дата: <strong>{date}</strong></>}
     </div>
   )
 }
