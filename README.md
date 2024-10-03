@@ -1,7 +1,6 @@
 # React + TypeScript + Vite
 
-Test task
-Codup
+Тестовое задание для Codup
 
 # Проблемы при выполнении
 
